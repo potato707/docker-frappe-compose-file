@@ -2,7 +2,7 @@ x-customizable-image: &customizable_image
   # By default the image used only contains the `frappe` and `erpnext` apps.
   # See https://github.com/frappe/frappe_docker/blob/main/docs/custom-apps.md
   # about using custom images.
-  image: ${CUSTOM_IMAGE:-frappe/erpnext}:${CUSTOM_TAG:-$ERPNEXT_VERSION}
+  image: ghcr.io/user/repo/custom:1.0.0
   # pull_policy: ${PULL_POLICY:-always}
   pull_policy: never
   restart: ${RESTART_POLICY:-unless-stopped}
